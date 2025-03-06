@@ -43,6 +43,14 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
+.image img {
+    width: 100%;  /* Makes the image responsive */
+    max-width: 300px;  /* Adjust the maximum size */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+
 a {
   display: inline-block;
   text-decoration: none;
