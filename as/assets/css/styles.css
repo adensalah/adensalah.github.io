@@ -1,3 +1,58 @@
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.skills-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.skills-tags span.highlight {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.skills-tags span:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.skill-icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+/* Technology-specific colors */
+.fa-java { color: #007396; }
+.fa-js-square { color: #F7DF1E; }
+.fa-python { color: #3776AB; }
+.fa-leaf { color: #6DB33F; } /* Spring */
+.fa-laravel { color: #FF2D20; }
+.fa-react { color: #61DAFB; }
+.fa-angular { color: #DD0031; }
+.fa-node-js { color: #339933; }
+.fa-android { color: #3DDC84; }
+.fa-mobile-alt { color: #02569B; } /* Flutter */
+.fa-aws { color: #FF9900; }
+.fa-docker { color: #2496ED; }
+.fa-network-wired { color: #1BA0D7; } /* Cisco */
+.fa-git-alt { color: #F05032; }
+.fa-terminal { color: #4EAA25; } /* Bash */
+.fa-database { color: #4479A1; } /* MySQL/PostgreSQL */
+.fa-html5 { color: #E34F26; }
+.fa-css3-alt { color: #1572B6; }
 /* Dark Mode Variables */
 [data-theme="dark"] {
   --primary-color: #3b82f6;
