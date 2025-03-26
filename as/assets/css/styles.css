@@ -1,80 +1,27 @@
-html.is-changing .transition-fade {
-  transition: opacity 0.25s;
-  opacity: 1;
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --primary-color: #3b82f6;
+  --text-color: #f8fafc;
+  --bg-color: #0f172a;
+  --bg-secondary: #1e293b;
+  --border-color: #334155;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
 }
-html.is-animating .transition-fade {
-  opacity: 0;
+
+/* Make sure these elements use the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 5%;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
+  background-color: var(--bg-color);
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+/* Add transition for smooth theme change */
+body, .navbar {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-:root {
-  --primary: #2563eb;
-  --dark: #1e293b;
-  --light: #f8fafc;
-  --gray: #64748b;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  color: var(--dark);
-  background: white;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-/* Hero Section */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-text h1 span {
-  color: var(--primary);
-}
-
-/* Add this immediately to see visible changes */
-
-/* Add this to your styles.css */
 :root {
   --primary-color: #2563eb;
   --text-color: #1e293b;
